@@ -1,0 +1,936 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.firstlist{
+  height: 120px;
+  background-color: rgb(26, 26, 26);
+  display: flex;
+}
+.logolist{
+  width: 250px;
+  height: 120px;
+  display: flex;
+  margin-left: 150px;
+  margin-right: 100px;
+}
+.logocha{
+  line-height: 120px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+.lia{
+  color: white;
+  margin-right: 40px;
+  line-height: 120px;
+  font-weight: 700;
+  font-size: 20px;
+  transition: all .3s;
+}
+.linohiden{
+  color: red;
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.lia:hover{
+  color: red;
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.buy{
+  margin-top: 40px;
+  background-color: brown;
+  border-radius: 10px;
+  margin-left: 60px;
+  transition: all .6s;
+}
+.buy:hover{
+  background-color: white;
+}
+.buya{
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all .6s;
+}
+.buy:hover .buya{
+  font-size: 20px;
+  color: black;
+}
+.loopimage{
+  display: flex;
+  width: 900px;
+  height: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.leftbutton{
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  top: 230px;
+  border-radius: 0  50% 50% 0;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: 400;
+  padding-left: 5px;
+  box-sizing: border-box;
+  opacity: 0.4;
+  transition: all .3s;
+}
+.rightbutton{
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  position: absolute;
+  right: 0;
+  top: 230px;
+  font-weight: 400;
+  border-radius: 50% 0 0 50% ;
+  line-height: 50px;
+  font-size: 30px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  opacity: 0.4;
+  transition: all .3s;
+}
+.lefta{
+  color: black;
+  transition: all .3s;
+}
+.righta{
+  color: black;
+  transition: all .3s;
+}
+.leftbutton:hover{
+  opacity: 0.8;
+}
+.rightbutton:hover{
+  opacity: 0.8;
+}
+.leftbutton:hover .lefta{
+  font-size: 35px;
+  font-weight: 900;
+}
+.rightbutton:hover .righta{
+  font-size: 35px;
+  font-weight: 900;
+}
+.bottomloop{
+  width: 150px;
+  height: 30px;
+  background-color: rgb(198, 185, 185);
+  opacity: 0.4;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 380px;
+}
+.Allredpoint{
+  display: flex;
+  width: 100px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.bottomredpoint{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.bottomredpointloop
+{
+ transform: scale(1.3);
+ background-color: blue;
+}
+.secondlist{
+  height: 550px;
+  position: relative;
+  background-image: url(./image/background.png);
+  background-repeat: repeat;
+  background-size:contain;
+}
+.timedata{
+  height: 450px;
+  width: 300px;
+  background-color: brown;
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  border-radius: 40px;
+}
+.nowdate{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+.movieloading{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.timeblock{
+  display: flex;
+  height: 50px;
+}
+.tb{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(169, 157, 157);
+  border-radius: 10px;
+  opacity: 0.6;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 900;
+  animation-name: tbanimation;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.tb:nth-child(1)
+{
+  margin-left: 50px;
+}
+.font{
+  width: 20px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: 900;
+}
+.videotime{
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+}
+.buyticket{
+  width: 80px;
+  height: 30px;
+  background-color: brown;
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 100px;
+  border-radius: 20px;
+  transition: all .3s;
+  font-family: 幼圆;
+}
+.buyticketa{
+  color: white;
+  transition: all 1.5s;
+}
+.buyticket:hover{
+  background-color: white;
+  height: 60px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px white;
+}
+.buyticket:hover .buyticketa{
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
+@keyframes tbanimation{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.timedata:hover{
+  box-shadow: 2px 2px 2px 2px red;
+}
+.rightlist{
+  width: 300px;
+  height: 450px;
+  background-color: brown;
+  position: absolute;
+  right: 50px;
+  top: 60px;
+  border-radius: 40px;
+}
+.nowtime{
+  height: 20px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.beijingtime{
+  display: inline;
+  
+}
+.looplist{
+  justify-content: space-between;
+  display: flex;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.thirdlist{
+  height: 400px;
+  overflow: hidden;
+}
+.position:hover{
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+.positionhiden{
+  color: black;
+  font-size: 30px;
+}
+.loop{
+  display: none;
+  height: 100px;
+  height: 300px;
+}
+.loopnohiden{
+  display: block;
+}
+.loop:nth-child(1){
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  
+}
+.firstconten{
+  line-height: 50px;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px gray;
+  font-weight: 900;
+  padding-left: 20px;
+}
+.buyticket1a{
+  color: black;
+  font-weight: 900;
+  transition: all .3s;
+}
+.buyticket1{
+  margin-left: 70px;
+  margin-top: 30px;
+  border-radius: 30px;
+  width: 100px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid black;
+  transition: all .5s;
+}
+.buyticket1:hover{
+  background-color: white;
+}
+.buyticket1:hover .buyticket1a{
+  font-size: 22px;
+  font-family: 幼圆;
+  font-weight: 900;
+}
+.loop:nth-child(2){
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  
+}
+.secondconten{
+  line-height: 50px;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px 2px gray;
+  font-weight: 900;
+  padding-left: 20px;
+}
+.back1{
+  background-image: url(./image/back1.png);
+  color: red;
+}
+.back2{
+  background-image: url(./image/back2.png);
+}
+.back3{
+  background-image: url(./image/back3.png);
+  color: white;
+}
+.loop:nth-child(3){
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  
+}
+.thirdlist{
+  padding: 40px;
+  height: 650px;
+  background-color: rgb(19, 21, 31);
+}
+.thirdtop{
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.thirdtopa{
+  color: white;
+  font-size: 30px;
+  transition: all 1s;
+}
+.thirdtopa:hover{
+  color: brown;
+  font-size: 40px;
+}
+.topadmination{
+  transition: all 1.6s;
+  color: white;
+}
+.topadminationa{
+  transition: all 1.6s;
+}
+.thirdlist:hover .topadmination{
+  transform: translate(1600px) translate(-580px);
+}
+.thirdlist:hover .topadminationa{
+  transform: translateY(-50px) translate(1200px);
+}
+.thirdcontent{
+  display: flex;
+  height: 600px;
+  padding: 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.movie1{
+  height: 150px;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+}
+.movie1:nth-child(1){
+  background-image: url(./image/rexiaomovie1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all .5s;
+  opacity: 0;
+}
+.movie1:nth-child(2){
+  background-image: url(./image/rexiaomovie2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 1s;
+}
+.movie1:nth-child(3){
+  background-image: url(./image/rexiaomovie3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all .5s;
+  opacity: 0;
+
+}
+.movie1:nth-child(4){
+  background-image: url(./image/rexiaomovie4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all 1.5s;
+  opacity: 0.5
+}
+.movie1:nth-child(5){
+  background-image: url(./image/rexiaomovie5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 2.5s;
+}
+.movie1:nth-child(6){
+  background-image: url(./image/rexiaomovie6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all 1.5s;
+  opacity: 0;
+}
+.movie1:nth-child(7){
+  background-image: url(./image/rexiaomovie7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all 2.5s;
+  opacity: 0;
+}
+.movie1:nth-child(8){
+  background-image: url(./image/rexiaomovie8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 3s;
+}
+.movie1:nth-child(9){
+  background-image: url(./image/rexiaomovie9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all 2.5s;
+  opacity: 0;
+}
+.thirdlist:hover .movie1:nth-child(1){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(2){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(3){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(4){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(5){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(6){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(7){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(8){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie1:nth-child(9){
+  transform: translate(0);
+  opacity: 1;
+}
+.movie1hiden{
+  height: 150px;
+  width: 400px;
+  background-color: rgb(175, 167, 167);
+  opacity: 1;
+  transition: all .6s;
+  transform: translateY(30px);
+  opacity: 0;
+  border-radius: 20px;
+}
+.movie1hidentop{
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.movie1hidenclass{
+  width: 200px;
+  height: 40px;
+  padding-top: 10px;
+  margin-left: 85px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 800;
+  font-size: 25px;
+  transition: all .3s;
+}
+.movie1hidenclassa{
+  color: black;
+  transition: all .3s;
+}
+.movie1hidenclass:hover{
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+.movie1hidenclass:hover .movie1hidenclassa{
+  font-size: 30px;
+  color: brown;
+}
+.movie1:hover .movie1hiden{
+  display: block;
+  transform: translateX(0);
+  opacity: 0.6;
+}
+/* 分页 */
+.movie2:hover .movie1hiden{
+  display: block;
+  transform: translateX(0);
+  opacity: 0.6;
+}
+.movie2{
+  height: 150px;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+}
+.movie2:nth-child(1){
+  background-image: url(./image/biaoshengmovie1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all .5s;
+  opacity: 0;
+}
+.movie2:nth-child(2){
+  background-image: url(./image/biaoshengmovie2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 1s;
+}
+.movie2:nth-child(3){
+  background-image: url(./image/biaoshengmovie3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all .5s;
+  opacity: 0;
+
+}
+.movie2:nth-child(4){
+  background-image: url(./image/biaoshengmovie4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all 1.5s;
+  opacity: 0.5
+}
+.movie2:nth-child(5){
+  background-image: url(./image/biaoshengmovie5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 2.5s;
+}
+.movie2:nth-child(6){
+  background-image: url(./image/biaoshengmovie6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all 1.5s;
+  opacity: 0;
+}
+.movie2:nth-child(7){
+  background-image: url(./image/biaoshengmovie7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all 2.5s;
+  opacity: 0;
+}
+.movie2:nth-child(8){
+  background-image: url(./image/biaoshengmovie8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 3s;
+}
+.movie2:nth-child(9){
+  background-image: url(./image/biaoshengmovie9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all 2.5s;
+  opacity: 0;
+}
+.thirdlist:hover .movie2:nth-child(1){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(2){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(3){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(4){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(5){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(6){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(7){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(8){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie2:nth-child(9){
+  transform: translate(0);
+  opacity: 1;
+}
+/* 分页 */
+.movie3:hover .movie1hiden{
+  display: block;
+  transform: translateX(0);
+  opacity: 0.6;
+}
+.movie3{
+  height: 150px;
+  width: 400px;
+  background-color: white;
+  border-radius: 20px;
+}
+.movie3:nth-child(1){
+  background-image: url(./image/xinshengmovie1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all .5s;
+  opacity: 0;
+}
+.movie3:nth-child(2){
+  background-image: url(./image/xinshengmovie2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 1s;
+}
+.movie3:nth-child(3){
+  background-image: url(./image/xinshengmovie3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all .5s;
+  opacity: 0;
+
+}
+.movie3:nth-child(4){
+  background-image: url(./image/xinshengmovie4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all 1.5s;
+  opacity: 0.5
+}
+.movie3:nth-child(5){
+  background-image: url(./image/xinshengmovie5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 2.5s;
+}
+.movie3:nth-child(6){
+  background-image: url(./image/xinshengmovie6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all 1.5s;
+  opacity: 0;
+}
+.movie3:nth-child(7){
+  background-image: url(./image/xinshengmovie7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-500px);
+  transition: all 2.5s;
+  opacity: 0;
+}
+.movie3:nth-child(8){
+  background-image: url(./image/xinshengmovie8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: all 3s;
+}
+.movie3:nth-child(9){
+  background-image: url(./image/xinshengmovie9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(500px);
+  transition: all 2.5s;
+  opacity: 0;
+}
+.thirdlist:hover .movie3:nth-child(1){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(2){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(3){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(4){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(5){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(6){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(7){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(8){
+  transform: translate(0);
+  opacity: 1;
+}
+.thirdlist:hover .movie3:nth-child(9){
+  transform: translate(0);
+  opacity: 1;
+}
+.forthlist{
+  height: 300px;
+  background-color: rgb(19, 21, 31);
+  padding-top: 30px;
+  position: relative;
+}
+.forthlisttop{
+  color: white;
+  width: 200px;
+  height: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 30px;
+  transition: all .3s;
+}
+.talkback{
+  width: 500px;
+  height: 200px;
+  background-color: rgb(19, 21, 31);
+  border: 2px solid rgb(19, 21, 31);
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px 6px rgb(19, 21, 31);
+  position: absolute;
+  color: rgb(19, 21, 31);
+  left: 200px;
+  padding: 30px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 900;
+  transition: all .5s;
+}
+.talkbackarea{
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  right: 200px;
+  
+}
+.talkbackbottom{
+  display: flex;
+}
+textarea{
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all .6s;
+  transform: translateX(-280px)
+}
+.bottomtext{
+  text-align: center;
+  width: 280px;
+  margin-left: 350px;
+  box-sizing: border-box;
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+  margin-right: 80px;
+  transition: all .6s;
+  transform: translateX(-280px)
+}
+.text{
+  display: inline;
+}
+.give{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: all .6s;
+  transform: translateX(-280px)
+}
+.forthlist:hover .forthlisttop{
+  transform: translateY(-400px);
+  font-size: 30px;
+}
+.forthlist:hover .talkback{
+  transform: translateY(-400px) translateX(350px);
+  background-color: rgb(19, 21, 31);
+  border: 2px solid white;
+  box-shadow: none;
+  color: white;
+  font-size: 20px;
+  height: 230px;
+}
+.forthlist:hover textarea{
+  transform: translateX(-350px) translateY(-50px);
+  outline: none;
+  border-radius: 20px;
+  font-weight: 900;
+}
+.forthlist:hover .bottomtext{
+  transform: translateX(-350px) translateY(-50px);
+}
+.forthlist:hover .give{
+  transform: translateX(-350px) translateY(-50px);
+}
